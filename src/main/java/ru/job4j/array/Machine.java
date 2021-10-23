@@ -17,4 +17,22 @@ public class Machine {
         }
             return Arrays.copyOf(rsl, size);
         }
+
+    class CrossArray {
+        public static void printCrossEl(int[] left, int[] right) {
+            for (int i : left) {
+                for (int j : right) {
+                    if (i == j) {
+                        System.out.print(i);
+                    }
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] left = {1, 2, 3};
+        int[] right = {0, 1, 15, 7, 2};
+        CrossArray.printCrossEl(left, right);
+    }
     }
